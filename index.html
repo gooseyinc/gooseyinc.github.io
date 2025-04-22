@@ -69,10 +69,23 @@
                 </ul>
             </nav> <!-- end s-header__nav-wrap -->
 
-            <a href="mailto:hello@goosey.org" class="btn btn--primary btn--small">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
-                Contact
-            </a>
+ <a href="#" class="btn btn--primary btn--small" id="openModalBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+    Send Message
+</a>
+
+<div class="modal" id="contactModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Send Message</h2>
+        <form action="https://formsubmit.co/hello@goosey.org" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
 
         </div> <!-- end header-content -->
 
@@ -95,11 +108,11 @@
                 <h1>Hello.</h1>
                 <div class="s-hero__content-about">
 
-                    <p>
-                    We are Goosey, Inc. We like <br>
-                    create great brands <br>
-                    on different sectors.
-                    </p>
+                   <p>
+    We are <span class="highlight-text">Goosey, Inc.</span><br> 
+	We like create great brands <br>
+    on different sectors.
+</p>
     
                     <footer>
                         <div class="s-hero__content-social">
@@ -147,14 +160,12 @@
 
             <div class="column large-6 w-900-stack s-about__intro-text">
                 <h1 class="display-1" data-aos="fade-up">
-                    Goosey, Inc. is a company that has investments in energy storage and many other sectors especially Blockchain and Bitcoin Mining and provides services under different brands.
-                </h1>
+        <span class="highlight">Goosey Inc.</span> first started with Bitcoin mining and by specializing, grew alongside new brands in various engineering sectors.
+    </h1>
 
                 <p class="lead" data-aos="fade-up">
-                    We started this business by producing mining and mining software. 
-                    We moved on to meet energy needs and automation processes. 
-                    The process has led us to Linux expertise, DevOps services, and real-time software production. 
-                    Today, we continue to grow and create different brands. 
+                    Our journey began with mining farms and the development of mining software, during which we built exceptional farms, managed energy infrastructures, and conducted operational work and engineering projects. 
+					This process allowed us to gain expertise in data center construction and management. 
                 </p>
             </div>
 
@@ -165,32 +176,27 @@
 
         <div class="row block-large-1-2 block-tab-full s-about__process item-list">
             <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Identify</h3>
+                <h3 class="item-title">System Design</h3>
                 <p>
-                Firstly, we define the problem and with a serious engineering background, 
-                we address the problem and provide real-world solutions.
+                  We specialized in System Design while growing our company and gained in-depth expertise in this field.
                 </p>
             </div>
             <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Engineering</h3>
+                <h3 class="item-title">Network Design</h3>
                 <p>
-                We consider literature review and scientific approaches of experts. 
-                We transform the process into an automated process and obtain scientific approaches.
+                  We designed next-generation network infrastructures, collaborated with a diverse range of brands and gained valuable experience in network design.
                 </p>
             </div>
             <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Solution</h3>
+                <h3 class="item-title">Cyber Security</h3>
                 <p>
-                We have a solution-oriented approach.
-                We test the solution in virtual and experimental environments.
-                When we get the solution and the results, we put it into practice.
+                 We specialized in cyber security within the system infrastructures and network topologies we designed ensuring the highest level of security for all our data centers.
                 </p>
             </div>
             <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Onsite</h3>
+                <h3 class="item-title">Energy Management</h3>
                 <p>
-                We love being on the field. 
-                We engage in engineering applications with a real-time and autonomous approach.
+                 We designed next-generation smart energy grids, ensuring energy efficiency and consistently maintaining performance.
                 </p>
             </div>
         </div>
@@ -210,15 +216,13 @@
             </div>
             <div class="column large-6 w-900-stack">
                 <h1 class="display-1" data-aos="fade-up">
-                    We have expertise in many popular areas such as Linux, DevOps, AI and Blockchain. 
+                    We specialize in mining farm facility setup, system management, network design and energy management. 
                 </h1>
             </div>
             <div class="column large-6 w-900-stack">
                 <p class="lead" data-aos="fade-up">
-                    Our team has extensive expertise in Linux-based systems, having dockerized and optimized a wide range of products across various industries. 
-                    We are highly proficient in containerization and orchestration technologies, leveraging tools like Docker and Kubernetes to ensure scalability, reliability, and performance.
-                    In DevOps, we emphasize automation, CI/CD best practices, and infrastructure as code, enabling rapid and reliable software delivery. 
-                    Our DevOps culture is built around agility, efficiency, and resilience, empowering businesses to innovate faster.
+                    Our team members are experts in their fields. We turn our expertise into products. We work with the best engineers in their domains and assign the right people to the right positions. 
+					We always prioritize education and invest in it. Technology and people are the true resources of our company.
                 </p>
             </div>
         </div>
@@ -226,62 +230,54 @@
         <div class="row block-large-1-2 block-tab-full s-services__services item-list">
             <div class="column item item-service" data-aos="fade-up">
                 <span class="service-icon service-icon--product-design"></span>
-                <h3 class="item-title">Brainstorm</h3>
+                <h3 class="item-title">Linux</h3>
                 <p>
-                At the core of our company lies a strong engineering mindset. We actively engage in continuous brainstorming and technical deep-dives across Linux, Blockchain, and DevOps disciplines. 
-                Our culture is rooted in curiosity, scientific research, and the drive to understand and shape emerging technologies.
-                We have advanced expertise in Linux environments and containerization, consistently dockerizing complex systems and deploying them efficiently across scalable infrastructures. 
-                Our journey began with blockchain mining, and has since evolved into industry-specific implementations—particularly in the energy sector—where we integrate decentralized technologies with high-impact real-world solutions.
+                 Our expertise in The Linux Operating System kernel has enabled us to deliver successful projects, ranging from real-time operating systems and mining-optimized embedded systems to customized versions of energy management on mining hardware.
                 </p>
             </div>
             <div class="column item item-service" data-aos="fade-up">
                 <span class="service-icon service-icon--branding"></span>
-                <h3 class="item-title">Full Target</h3>
+                <h3 class="item-title">Software Development</h3>
                 <p>
-                We are a purpose-driven team with a relentless focus on results. 
-                Our approach is grounded in experimentation and scientific rigor—only when data aligns with insight, and our engineering hypotheses are validated through real-world trials, do we move forward with confidence.
-                In everything we do—from Linux system design and blockchain architecture to DevOps automation—we apply a methodical mindset. We test, measure, iterate, and refine until the outcome is not just promising, but proven. 
+                 In software development, our company has followed the latest trends, integrating processes like for example Agile, ITIL, Scrum and DevOps into our production line, delivering dynamic software with cutting-edge programming languages. 
                 </p>
             </div>
             <div class="column item item-service" data-aos="fade-up">
                 <span class="service-icon service-icon--frontend"></span>
-                <h3 class="item-title">Production</h3>
+                <h3 class="item-title">Hardware Design</h3>
                 <p>
-                Our expertise goes beyond software—we build real-time, hardware-driven systems powered by Linux at their core. 
-                From designing and manufacturing mining devices to developing performance-optimized software for GPU-based computation,
-                We specialize in end-to-end solutions that bridge low-level hardware with high-level orchestration.
+                 We specialized in hardware production, designing and manufacturing critical, high-performance devices ranging from real-time sensors to customized IoT solutions.
+				 We have established ourselves as a strong player in GPU and VRAM production.
                 </p>
             </div>
             <div class="column item item-service" data-aos="fade-up">
                 <span class="service-icon service-icon--research"></span>
-                <h3 class="item-title">Education</h3>
+                <h3 class="item-title">Blockchain</h3>
                 <p>
-                We don’t just build cutting-edge solutions—we actively share our knowledge through structured training programs and hands-on workshops. 
-                As experts in Linux-based systems, real-time hardware integration, Blockchain infrastructure, and modern DevOps practices.
-                We offer tailored educational experiences designed for teams, institutions and industry professionals.
+                 We specialize in Blockchain, having built some of the world’s largest Bitcoin and Ethereum mining pools. 
+				 We have enabled millions of miners to operate flawlessly and continue our journey which began with Satoshi Nakamoto, filled with success.
                 </p>
             </div>
             <div class="column item item-service" data-aos="fade-up">
                 <span class="service-icon service-icon--illustration"></span>
-                <h3 class="item-title">Partnership</h3>
+                <h3 class="item-title">Nuclear</h3>
                 <p>
-                Our strength lies not only in our in-house expertise but also in the exceptional ecosystem we've built with our partners and subcontractors. 
-                We are proud to collaborate with industry-leading firms and visionary partners who bring specialized skills, deep domain knowledge and unwavering commitment to quality.
+                 We have played a pivotal role in the critical management of nuclear energy and data center infrastructures. 
+				 We led the way in designing modular reactors and developing cutting-edge software for energy management, participating in high-level operations.
                 </p>
             </div>
             <div class="column item item-service" data-aos="fade-up">
                 <span class="service-icon service-icon--ecommerce"></span>
-                <h3 class="item-title">Intelligence</h3>
+                <h3 class="item-title">Artificial  Intelligence</h3>
                 <p>
-                 We harness the power of artificial intelligence not just as a tool but as a creative partner in engineering smarter, faster and more impactful solutions. 
-                 By integrating AI into our workflows, we accelerate ideation, automate complex tasks and uncover insights that fuel innovation.
+                 We developed and applied AI solutions to create automated systems and robotic process automation (RPA) solutions, specializing in optimizing operations within critical infrastructures such as data centers and other high-stakes facilities.
                 </p>
             </div>
         </div>
 
     </section> <!-- end s-services -->
 
-    <section id="portfolio" class="s-portfolio">
+ <section id="portfolio" class="s-portfolio">
 
         <div class="row s-porfolio__top">
             <div class="column large-6 w-900-stack">
@@ -291,7 +287,7 @@
             </div>
             <div class="column large-6 w-900-stack">
                 <h1 class="display-1" data-aos="fade-up">
-                    Here are some of our projects we done lately.
+                    Here are some of the recent projects we have worked on
                 </h1>
             </div>
         </div> <!-- end s-portfolio__top-->
@@ -301,21 +297,22 @@
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-red-wheel.jpg" title="The Red Wheel" data-size="1050x700">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-red-wheel.jpg" title="Sparkpool" data-size="1050x700">
                             <img src="images/portfolio/red-wheel.jpg" 
                                  srcset="images/portfolio/red-wheel.jpg 1x, images/portfolio/red-wheel@2x.jpg 2x" alt="">
                         </a>
                     </div>
                     <div class="folio-item__info">
                         <div class="folio-item__cat">Customer</div>
-                        <h4 class="folio-item__title">DIA Holding</h4>
+                        <h4 class="folio-item__title">Sparkpool</h4>
                     </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <a href="https://sparkpool.com" title="Project Link" class="folio-item__project-link">Project Link</a>
                     <div class="folio-item__caption">
-                        <p>We completed the construction of the airport belonging to Azerbaijan Airlines in 18 months.</p>
+                        <p>We have established the infrastructure for SparkPool, designing a powerful pool for Bitcoin miners, offering enhanced performance and reliability.</p>
                     </div>
                 </div>
             </div> <!-- end column -->
+			
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
@@ -326,89 +323,14 @@
                     </div>
                     <div class="folio-item__info">
                         <div class="folio-item__cat">Customer</div>
-                        <h4 class="folio-item__title">Cairo Airport Company</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
-                    <div class="folio-item__caption">
-                        <p>We quickly completed the airport expansion project of Cairo Airport.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-oi-logo.jpg" Title="OI Logo" data-size="1050x700">
-                            <img src="images/portfolio/oi-logo.jpg.jpg" 
-                                 srcset="images/portfolio/oi-logo.jpg 1x, images/portfolio/oi-logo@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Customer</div>
-                        <h4 class="folio-item__title">MNG Gold</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
-                    <div class="folio-item__caption">
-                        <p>We established the SCADA systems infrastructure of the Gold production refinery in Africa.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-corrugated-sheets.jpg" title="Corrugated Sheets" data-size="1050x700">
-                            <img src="images/portfolio/corrugated-sheets.jpg" 
-                                 srcset="images/portfolio/corrugated-sheets.jpg 1x, images/portfolio/corrugated-sheets@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Customer</div>
-                        <h4 class="folio-item__title">EXPO 2016</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
-                    <div class="folio-item__caption">
-                        <p>We designed the entire infrastructure architecture of EXPO 2016 fair held in Antalya city.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="Sand Dunes" data-size="1050x700">
-                            <img src="images/portfolio/woodcraft.jpg" 
-                                 srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Customer</div>
-                        <h4 class="folio-item__title">Justice Department in Azerbaijan</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
-                        Project Link
-                    </a>
-                    <div class="folio-item__caption">
-                        <p>We developed and put into use an electronic-handcuff system for Government of Azerbaijan.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="The Lamp" data-size="1050x700">
-                            <img src="images/portfolio/lamp.jpg" 
-                                 srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Customer</div>
                         <h4 class="folio-item__title">Ethermine</h4>
                     </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <a href="https://www.ethermine.org" title="Project Link" class="folio-item__project-link">Project Link</a>
                     <div class="folio-item__caption">
-                        <p>We built Ethereum mining farms for Ethereum and enabled thousands of miners to work.</p>
+                        <p>We launched the data center for Ethereum mining and operated it efficiently until the end of Ethereum mining.</p>
                     </div>
                 </div>
             </div> <!-- end column -->
-
         </div> <!-- folio-list -->
 
     </section> <!-- end s-portfolio -->
@@ -431,14 +353,12 @@
             <div class="column">
                 <div class="clients" data-aos="fade-up">
                     
-                    <a href="https://azal.az" title="" class="clients__slide"><img src="images/icons/clients/dropbox.svg" /></a>
-                    <a href="https://arup.com" title="" class="clients__slide"><img src="images/icons/clients/atom.svg" /></a>
-                    <a href="https://ethermine.org" title="" class="clients__slide"><img src="images/icons/clients/github.svg" /></a>
-                    <a href="https://www.mnggold.com" title="" class="clients__slide"><img src="images/icons/clients/redhat.svg" /></a>
-                    <a href="https://limak.com.tr" title="" class="clients__slide"><img src="images/icons/clients/medium.svg" /></a>
-                    <a href="https://ethpool.org" title="" class="clients__slide"><img src="images/icons/clients/messenger.svg" /></a>
-                    <a href="https://meta.com" title="" class="clients__slide"><img src="images/icons/clients/steam.svg" /></a>
-                    <a href="https://www.rosatom.ru" title="" class="clients__slide"><img src="images/icons/clients/spotify.svg" /></a>
+                    <a href="https://dropbox.com" title="" class="clients__slide"><img src="images/icons/clients/dropbox.svg" /></a>
+                    <a href="https://github.com" title="" class="clients__slide"><img src="images/icons/clients/github.svg" /></a>
+                    <a href="https://redhat.com" title="" class="clients__slide"><img src="images/icons/clients/redhat.svg" /></a>
+                    <a href="https://gitlab.com" title="" class="clients__slide"><img src="images/icons/clients/messenger.svg" /></a>
+                    <a href="https://steam.com" title="" class="clients__slide"><img src="images/icons/clients/steam.svg" /></a>
+                    <a href="https://spotify.com" title="" class="clients__slide"><img src="images/icons/clients/spotify.svg" /></a>
                      
                 </div> <!-- end clients -->
             </div> <!-- end column -->
@@ -452,10 +372,10 @@
 
                     <div class="testimonial-slider__slide">
                         <p>
-                        Goosey, Inc. working with gave us incredible skills..
+                         Partnering with Goosey Inc., we built a powerful and seamless mining pool infrastructure – rock-solid performance, zero hassles.
                         </p>
                         <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <img src="images/avatars/user-01.png" alt="Customer image" class="testimonial-slider__avatar">
                             <cite class="testimonial-slider__cite">
                                 <strong>Founder</strong>
                                 <span>Bitfly</span>
@@ -465,39 +385,39 @@
     
                     <div class="testimonial-slider__slide">
                         <p>
-                        We were able to solve every problem in the airport systems immediately on site.
+                         These are great teams, we enjoyed working together.
                         </p>
                         <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <img src="images/avatars/user-02.png" alt="Customer image" class="testimonial-slider__avatar">
                             <cite class="testimonial-slider__cite">
-                                <strong>Cihangir Askerov</strong>
-                                <span>AZAL</span>
+                                <strong>CEO</strong>
+                                <span>Ethpool</span>
                             </cite>
                         </div>
                     </div> <!-- end testimonials__slide -->
     
                     <div class="testimonial-slider__slide">
                         <p>
-                        Goosey Inc. was successful in rapidly implementing DevOps processes in electronic clamp systems.
+                         Our collaboration with Goosey Inc. was successful and highly educational.
                         </p>
                         <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <img src="images/avatars/user-03.png" alt="Customer image" class="testimonial-slider__avatar">
                             <cite class="testimonial-slider__cite">
-                                <strong>Hikmat Abdullayev</strong>
-                                <span>IDRAK</span>
+                                <strong>Founder</strong>
+                                <span>2Miners</span>
                             </cite>
                         </div>
                     </div> <!-- end testimonials__slide -->
     
                     <div class="testimonial-slider__slide">
                         <p>
-                        We achieved a smooth transition to the SCADA system in our mining areas.
+                         We have designed secure systems that can be managed exactly as we want, right on time.
                         </p>
                         <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <img src="images/avatars/user-04.png" alt="Author image" class="testimonial-slider__avatar">
                             <cite class="testimonial-slider__cite">
-                                <strong>Serhan Umurhan</strong>
-                                <span>MNG Gold</span>
+                                <strong>Founder</strong>
+                                <span>SparkPool</span>
                             </cite>
                         </div>
                     </div> <!-- end testimonials__slide -->
@@ -570,7 +490,7 @@
             </div>
 
             <div class="column large-4 medium-12 s-footer__block--end">
-                <a href="mailto:hello@goosey.org" class="btn h-full-width">Send us a message</a>
+                <a href="mailto:hello@goosey.org" class="btn h-full-width">Send an e-mail</a>
 
                 <div class="ss-copyright">
                     <span>Copyright Goosey, Inc. 2023</span> 
@@ -627,12 +547,12 @@
 
     </div> <!-- end photoSwipe background -->
 
-
     <!-- Java Script
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+	<script src="js/mail.js"></script>
 
 </body>
 
