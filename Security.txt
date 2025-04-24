@@ -1,7 +1,0 @@
-# Goosey Inc! SEC Department
-Contact: mailto:hello@goosey.org
-Encryption: https://goosey.org/pgp-key
-Acknowledgements: https://goosey.org/acknowledgements
-Policy: https://goosey.org/policy
-Preferred-Languages: en, tr, az
-Hiring: https://goosey.org/careers
