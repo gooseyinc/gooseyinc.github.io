@@ -1,4 +1,4 @@
-/* Modal Arka Planı */
+/* Modal back plane */
 .modal {
     display: none;
     position: fixed;
@@ -10,27 +10,26 @@
     z-index: 1000;
 }
 
-/* Modal açıldığında */
+/* Modal open */
 .modal.show {
     display: block;
 }
 
-/* Modal içeriği (formun bulunduğu alan) */
+/* Modal content */
 .modal-content {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: red; /* Kırmızı arka plan */
+    background-color: red; /* red */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 500px; /* Maksimum genişlik 500px */
-    max-height: 90%; /* Maksimum yükseklik */
+    max-width: 500px; /* max  width */
+    max-height: 90%; /* max height */
     overflow-y: auto;
 }
-
 
 /* Close buton */
 .close {
@@ -42,7 +41,7 @@
     cursor: pointer;
 }
 
-/* Form elementleri */
+/* Form elements */
 input, textarea, button {
     width: 100%;
     padding: 10px;
@@ -51,16 +50,16 @@ input, textarea, button {
     border-radius: 5px;
 }
 
-/* "Goosey, Inc." kısmını vurgulamak için */
+/* "Goosey, Inc." red flag */
 .highlight-text {
-    color: red; /* Kırmızı renk */
-    font-weight: bold; /* Kalın yazı */
-    font-size: 1.5em; /* Yazı boyutunu büyüt */
-    letter-spacing: 2px; /* Harfler arasında biraz boşluk bırak */
-    animation: glowing 1.5s ease-in-out infinite; /* Göz alıcı ışıltı efekti */
+    color: red; /* red */
+    font-weight: bold; /* bold */
+    font-size: 1.5em; /* style fix */
+    letter-spacing: 2px; /* style fix */
+    animation: glowing 1.5s ease-in-out infinite; /* effect */
 }
 
-/* Göz alıcı ışıltı efekti */
+/* effect */
 @keyframes glowing {
     0% { text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red; }
     50% { text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red; }
@@ -68,10 +67,47 @@ input, textarea, button {
 }
 
 .highlight {
-    color: red;  /* Kırmızı renk */
-    font-weight: bold;  /* Yazıyı kalın yapmak isteyebilirsiniz */
+    color: red;  /* red */
+    font-weight: bold;  /* bold */
 }
 
+/* Logo */
+.logo-letter {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000; /* red */
+  color: #fff; /* white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 800;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+/* thanks */
+.thank-you-message {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+  background-color: #ff6666;
+}
 
 /* =================================================================== 
  * Flare Main Stylesheet
