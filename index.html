@@ -99,8 +99,11 @@
         <span class="close">&times;</span>
         <h2>Send Message</h2>
         <form action="https://formsubmit.co/hello@goosey.org" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
+		  <!-- hidden set -->
+		<input type="hidden" name="_captcha" value="false">
+		<input type="hidden" name="_next" value="https://goosey.org/thanks.html">
+            <input type="text" name="name" placeholder="Your Name Surname" required>
+            <input type="email" name="email" placeholder="Your E-mail" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
